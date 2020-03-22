@@ -5,7 +5,12 @@ import './App.css';
 //Import Bootstrap Framework
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-//Main Imports
+//Pages Imports
+import Home from './pages/Home';
+import Donation from './pages/Donation';
+import Login from './pages/Login';
+import Signin from './pages/SignIn';
+
 //Other Imports
 import {
   BrowserRouter as Router,
@@ -30,7 +35,7 @@ class App extends React.Component{
       ],
       home:{
         title: "SWE-Hub",
-        subTitle: "The easiest way to find your next dream software engineering internships.",
+        subTitle: "The easiest way to find your dream software engineering internship.",
         text: "Start applying and jumpstart your career!"
       },
       account:{
@@ -50,12 +55,13 @@ class App extends React.Component{
                     <Navbar.Toggle aria-controls="navbar-toggle"/>
                     <Navbar.Collapse id="navbar-toggle">
                         <Nav className="ml-auto">
-                            <h5> <Link className="nav-link display-5 font-weight-semibold" to="/">Home</Link></h5>
-                            <h5> <Link className="nav-link display-5 font-weight-semibold" to="/account">Account</Link></h5>
-                            <h5> <Link className="nav-link display-5 font-weight-semibold" to="/support"><span style={{color:'#749AC5'}}>Donation</span></Link></h5>
+                            <h5> <Link className="nav-link display-5 font-weight-semibold subheading" to="/">Home</Link></h5>
+                            <h5> <Link className="nav-link display-5 font-weight-semibold subheading" to="/account">Account</Link></h5>
+                            <h5> <Link className="nav-link display-5 font-weight-semibold heading" to="/support"><span style={{color:'#749AC5'}}>Donation</span></Link></h5>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
+                <Route path="/" exact render={() => <Home subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
             </Container>
         </Router>
     );
