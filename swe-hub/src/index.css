@@ -49,3 +49,11 @@ code {
   background-color: #4FBAEC;
   color: white;
 }
+
+@media (max-width: 1220px) 
+{
+    .photo
+    {
+        display: none;
+    }
+}
