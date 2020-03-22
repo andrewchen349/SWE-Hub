@@ -62,6 +62,8 @@ class App extends React.Component{
                     </Navbar.Collapse>
                 </Navbar>
                 <Route path="/" exact render={() => <Home subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+                <Route path="/account" exact render={() => <Signin />} />
+                <Route path="/support" exact render={() => <Donation />} />
             </Container>
         </Router>
     );
