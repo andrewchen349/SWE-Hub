@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //Pages Imports
 import Home from './pages/Home';
 import Donation from './pages/Donation';
-import Login from './pages/Login';
+import Login from './pages/Register';
 import Signin from './pages/SignIn';
 
 //Other Imports
