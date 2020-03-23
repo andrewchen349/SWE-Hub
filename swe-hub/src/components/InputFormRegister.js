@@ -35,7 +35,7 @@ export default function CustomizedInputs() {
   const classes = useStyles();
 
   return (
-    <Jumbotron className="bg-transparent jumbotron-fluid p-0 ct">
+    <Jumbotron className="bg-transparent jumbotron-fluid p-0 ctReg">
         <Container fluid={true}>
             <Row className="justify-content-center">
                 <Col className="text-left-center ml-3" md={9} sm={12}>
