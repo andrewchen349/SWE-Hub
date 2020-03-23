@@ -24,6 +24,14 @@ code {
   text-align: center;
 }
 
+.formextra{
+  text-align: center;
+}
+.formextra > div {
+  vertical-align:top;
+  display:inline-block;   
+}
+
 .im{
   float: right;
   margin-top: 50px;
@@ -63,8 +71,30 @@ code {
   font-size: 16px;
   cursor: pointer;
 }
+.login{
+  background-color: #4FBAEC;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px;
+  width: 200px;
+}
+.link{
+  cursor: pointer;
+}
+.link p{
+  text-decoration: underline;
+} 
 
-/* Green */
+.link :hover{
+  color: #4FBAEC;
+}
+
 .success {
   border: 2px solid black;
   border-color: #4FBAEC;
