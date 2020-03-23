@@ -79,6 +79,21 @@ code {
   background-color: #4FBAEC;
   color: white;
 }
+.debug{
+  outline: 5px dotted green;
+}
+.sign{
+  margin-right: 120px;
+}
+
+
+@media (max-width: 700px) 
+{
+    .sign
+    {
+        margin-right: 180px;
+    }
+}
 
 @media (max-width: 1220px) 
 {
