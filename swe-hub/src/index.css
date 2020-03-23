@@ -43,7 +43,7 @@ code {
   width: 1000px; 
 }
 .photoSign{ 
-  width: 800px; 
+  width: 700px; 
   display: block;
 }
 .signIn{
@@ -95,7 +95,7 @@ code {
     }
 }
 
-@media (max-width: 1220px) 
+@media (max-width: 1000px) 
 {
     .photo
     {
@@ -103,6 +103,24 @@ code {
     }
 }
 @media (max-width: 1200px) 
+{
+    .photoSign
+    {
+        width: 500px;
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) 
+{
+    .photoSign
+    {
+      width: 400px;
+      display: block;
+    }
+}
+
+@media (max-width: 780px) 
 {
     .photoSign
     {
