@@ -6,7 +6,7 @@ function Home(props){
     return(
         <div className='box'>
             <HomePage subTitle={props.subTitle} text={props.text} />
-            <img alt="vector" className='photo pl-5' src={vector} />
+            <img alt="vector" className='photo mr-1' src={vector} />
         </div>
     );
 }

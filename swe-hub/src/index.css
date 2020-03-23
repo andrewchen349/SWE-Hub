@@ -17,12 +17,42 @@ code {
 .box{
   display: flex;
   align-items: center;
+ 
+}
+.box2{
+  overflow: auto;
+  text-align: center;
+}
+
+.im{
+  float: right;
+  margin-top: 50px;
+}
+.form{
+  float: left;
+  display: inline-block;
+  
+}
+.test{
+  outline: 5px dotted cyan;
 }
 
 .photo {
-  margin-left: -12%; 
+  margin-left: -15%; 
   float: right;
   width: 1000px; 
+}
+.photoSign{ 
+  width: 800px; 
+  display: block;
+}
+.signIn{
+  margin-left: 50%;
+  margin-bottom: 15%;
+  padding-right: 300px;
+}
+.ct{
+  margin-top: 60%;
 }
 
 .btn {
@@ -53,6 +83,13 @@ code {
 @media (max-width: 1220px) 
 {
     .photo
+    {
+        display: none;
+    }
+}
+@media (max-width: 1200px) 
+{
+    .photoSign
     {
         display: none;
     }
