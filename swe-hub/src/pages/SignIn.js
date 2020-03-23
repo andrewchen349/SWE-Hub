@@ -10,10 +10,10 @@ function SignIn(props){
                 <Form />
                 <div className="formextra ml-2">
                     <div>
-                        <a className='link' onClick={event => window.location.href='/register'}><p>Register </p></a>
+                        <a className='link' onClick={event => window.open('/register', '_blank')}><p>Register </p></a>
                     </div>
                     <div className="ml-3">
-                        <a className='link' onClick={event => window.location.href='/forgot'}>Forgot Password?</a>
+                        <a className='link' target="_blank" onClick={event => window.open('/forgot', '_blank')}>Forgot Password?</a>
                     </div>
                 </div>
             </div>

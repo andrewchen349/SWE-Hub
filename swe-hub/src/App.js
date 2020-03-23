@@ -8,8 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //Pages Imports
 import Home from './pages/Home';
 import Donation from './pages/Donation';
-import Login from './pages/Register';
+import Register from './pages/Register';
 import Signin from './pages/SignIn';
+import Forgot from './pages/ForgotPassword';
 
 //Other Imports
 import {
@@ -64,6 +65,8 @@ class App extends React.Component{
                 <Route path="/" exact render={() => <Home subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                 <Route path="/account" exact render={() => <Signin />} />
                 <Route path="/support" exact render={() => <Donation />} />
+                <Route path="/register" exact render={() => <Register />} />
+                <Route path="/forgot" exact render={() => <Forgot />} />
             </Container>
         </Router>
     );
