@@ -153,17 +153,19 @@ code {
   margin-left: 120px;
 }
 
-@media (max-width: 700px) 
+
+@media (max-width: 570px) 
 {
     .hero
     {
-        margin-right: 80%;
+        width: 100%;
     }
     .hero2
     {
       margin-right: 35%;
     }
     .he{
+      width: 90%;
       padding-right: 150px;
       display: inline;
     }
@@ -174,7 +176,8 @@ code {
       width: max-content;
     }
     .hero3{
-      margin-right: 75%;
+      margin-right: 35%;
+      margin-top: 20px;
     }
 }
 

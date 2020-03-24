@@ -7,16 +7,16 @@ import vector from '../assets/mainSmall.png';
 function Home(props){
     return(
         <div>
-            <div className='box'>
+            <div className='box hero'>
                 <HomePage subTitle={props.subTitle} text={props.text} />
                 <img alt="vector" className='photo mr-1' src={vector} />
             </div>
             <div>
                 <Hero />
             </div>
-            <div className="mt-2 tablect">
+            {/* <div className="mt-2 tablect">
                 <Table />
-            </div> 
+            </div>  */}
         </div>
     );
 }

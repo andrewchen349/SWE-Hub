@@ -8,14 +8,14 @@ function HomeHero(props){
 
 
     return(
-        <Jumbotron className="bg-transparent jumbotron-fluid p-0 ">
+        <Jumbotron className="bg-transparent jumbotron-fluid p-0">
             <Container fluid={true}>
-                <Row className="justify-content-center py-5 pl-5">
-                    <Col className="text-left ml-3 hero " md={9} sm={12} >
+                <Row className="justify-content-center mt-5">
+                    <Col className="text-left ml-3" md={9} sm={12} >
                         <h2 className="display-4 font-weight-bolder justift-content-center"><span style={{color:'#749AC5'}}>SWE Hub</span></h2>
                     </Col>
-                    < Col className="text-left ml-3 hero2 " md={9} sm={12}>
-                        { props.subTitle && <h4 className="display-6 font-weight-light he">{props.subTitle}</h4> }
+                    < Col className="text-left ml-3" md={9} sm={12}>
+                        { props.subTitle && <h4 className="display-6 font-weight-light he ">{props.subTitle}</h4> }
                         { props.text && <h4 className="display-6 font-weight-light he2">{props.text}</h4> }
                     </Col>
                     <Col className="text-left ml-3 py-2 hero3" md={9} sm={12}>

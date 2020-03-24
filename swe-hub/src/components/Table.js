@@ -38,18 +38,18 @@ const rows = [
   createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 700,
-  },
-});
+// const useStyles = makeStyles({
+//   table: {
+//     minWidth: 700,
+//   },
+// });
 
 export default function CustomizedTables() {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="customized table">
+      <Table  aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell>Dessert (100g serving)</StyledTableCell>
