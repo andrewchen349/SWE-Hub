@@ -153,7 +153,6 @@ code {
   margin-left: 120px;
 }
 
-
 @media (max-width: 570px) 
 {
     .hero
@@ -187,10 +186,6 @@ code {
     {
         margin-right: 180px;
     }
-}
-
-@media (max-width: 700px) 
-{
     .signWel
     {
         margin-right: 150px;
@@ -203,12 +198,14 @@ code {
     {
         display: none;
     }
-}
-@media (max-width: 1200px ) 
-{
     .companies
     {
         margin-right: -130px;
+    }
+    .photoSign
+    {
+        width: 500px;
+        display: block;
     }
 }
 
@@ -218,14 +215,6 @@ code {
     {
         margin-right: 300px;
         margin-left: 0px;
-    }
-}
-@media (max-width: 1200px) 
-{
-    .photoSign
-    {
-        width: 500px;
-        display: block;
     }
 }
 

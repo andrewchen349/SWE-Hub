@@ -8,7 +8,7 @@ function HomeHero(props){
 
 
     return(
-        <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+        <Jumbotron className="bg-transparent jumbotron-fluid p-0 ">
             <Container fluid={true}>
                 <Row className="justify-content-center mt-5">
                     <Col className="text-left ml-3" md={9} sm={12} >
@@ -16,7 +16,7 @@ function HomeHero(props){
                     </Col>
                     < Col className="text-left ml-3" md={9} sm={12}>
                         { props.subTitle && <h4 className="display-6 font-weight-light he ">{props.subTitle}</h4> }
-                        { props.text && <h4 className="display-6 font-weight-light he2">{props.text}</h4> }
+                        { props.text && <h4 className="display-6 font-weight-light">{props.text}</h4> }
                     </Col>
                     <Col className="text-left ml-3 py-2 hero3" md={9} sm={12}>
                         <button className='success' onClick={event => window.location.href='/account'}>Get Started</button>
