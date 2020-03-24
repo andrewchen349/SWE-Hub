@@ -145,6 +145,9 @@ code {
 .signFor{
   margin-right:80px;
 }
+.cp{
+  margin-left: 400px;
+}
 
 
 @media (max-width: 700px) 
@@ -163,11 +166,27 @@ code {
     }
 }
 
-@media (max-width: 1000px) 
+@media (max-width: 1200px) 
 {
     .photo
     {
         display: none;
+    }
+}
+@media (max-width: 1200px ) 
+{
+    .companies
+    {
+        margin-right: -130px;
+    }
+}
+
+@media (max-width: 950px) 
+{
+    .companies
+    {
+        margin-right: 300px;
+        margin-left: 0px;
     }
 }
 @media (max-width: 1200px) 
