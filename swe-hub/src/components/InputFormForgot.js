@@ -44,7 +44,6 @@ export default function CustomizedInputs() {
             </Row>
             <Row className="justify-content-center">
                 <Col className="text-left-center ml-3" md={9} sm={12}>
-                    {/* <h3 className="justify-content-center subheading sign">Password?</h3> */}
                     <form className={classes.root} noValidate>
                         <div>
                             <CssTextField

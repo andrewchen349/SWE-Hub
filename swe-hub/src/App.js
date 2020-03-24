@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Pages Imports
 import Home from './pages/Home';
-import Donation from './pages/Donation';
 import Register from './pages/Register';
 import Signin from './pages/SignIn';
 import Forgot from './pages/ForgotPassword';
@@ -64,7 +63,6 @@ class App extends React.Component{
                 </Navbar>
                 <Route path="/" exact render={() => <Home subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                 <Route path="/account" exact render={() => <Signin />} />
-                <Route path="/support" exact render={() => <Donation />} />
                 <Route path="/register" exact render={() => <Register />} />
                 <Route path="/forgot" exact render={() => <Forgot />} />
             </Container>

@@ -14,9 +14,9 @@ function Home(props){
             <div>
                 <Hero />
             </div>
-            <div className="mt-2">
+            <div className="mt-2 tablect">
                 <Table />
-            </div>
+            </div> 
         </div>
     );
 }

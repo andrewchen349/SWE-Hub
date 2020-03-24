@@ -148,7 +148,35 @@ code {
 .cp{
   margin-left: 400px;
 }
+.tablect{
+  max-width: 1300px;
+  margin-left: 120px;
+}
 
+@media (max-width: 700px) 
+{
+    .hero
+    {
+        margin-right: 80%;
+    }
+    .hero2
+    {
+      margin-right: 35%;
+    }
+    .he{
+      padding-right: 150px;
+      display: inline;
+    }
+    .he2{
+      margin-top: 20px;
+    }
+    .success{
+      width: max-content;
+    }
+    .hero3{
+      margin-right: 75%;
+    }
+}
 
 @media (max-width: 700px) 
 {
