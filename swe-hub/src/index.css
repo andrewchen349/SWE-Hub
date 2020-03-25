@@ -150,7 +150,8 @@ code {
 }
 .tablect{
   max-width: 1300px;
-  margin-left: 120px;
+  width: 100%;
+  margin-left: 60px;
 }
 
 @media (max-width: 570px) 
@@ -210,10 +211,17 @@ code {
     .her{
       margin-left: 200px;
     }
+    .tablect{
+      margin-left: 150px;
+    }
 }
 @media (max-width: 750px){
   .her{
     margin-left: 20px;
+  }
+  .tablect{
+    margin-left: 0px;
+    margin-right: 100px;
   }
 }
 
