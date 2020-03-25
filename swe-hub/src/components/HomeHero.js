@@ -5,8 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function HomeHero(props){
-
-
     return(
         <Jumbotron className="bg-transparent jumbotron-fluid p-0 ">
             <Container fluid={true}>
