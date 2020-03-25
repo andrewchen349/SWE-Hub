@@ -4,7 +4,7 @@
     "Name": "Akuna",
     "Position": "Many types",
     "Location": "Chicago, IL; Sydney, Australia; Shanghai; Boston, MA",
-    "Class Year": "Junior, Senior",
+    "Class": "Junior, Senior",
     "International": "",
     "Notes": "",
     "URL": "https://akunacapital.com/careers#careers"
@@ -41,7 +41,7 @@
   },
   {
     "": 5,
-    "Name (URL)": "Atlassian",
+    "Name": "Atlassian",
     "Position": "SDE",
     "Location": "Mountian View, CA",
     "Class Year": "Junior, Senior",
@@ -51,7 +51,7 @@
   },
   {
     "": 6,
-    "Name (URL)": "Belvedere Trading",
+    "Name": "Belvedere Trading",
     "Position": "SDE",
     "Location": "Chicago, IL",
     "Class Year": "Junior, Senior",
@@ -61,7 +61,7 @@
   },
   {
     "": 7,
-    "Name (URL)": "Blend",
+    "Name": "Blend",
     "Position": "SDE",
     "Location": "San Francisco, CA",
     "Class Year": "Junior, Senior",
@@ -71,7 +71,7 @@
   },
   {
     "": 8,
-    "Name (URL)": "Capital One",
+    "Name": "Capital One",
     "Position": "Tech Intern",
     "Location": "McLean, VA; Boston, MA; NY, NY; San Francisco, CA; Chicago, IL; Wilmington, DE; Richmond, VA; Plano, TX",
     "Class Year": "Junior, Senior",
@@ -81,7 +81,7 @@
   },
   {
     "": 9,
-    "Name (URL)": "Citadel",
+    "Name": "Citadel",
     "Position": "SDE, Quant, IT, DevOps",
     "Location": "Dublin; Chicago, IL; Hong Kong; London; NY; Austin, TX",
     "Class Year": "",
@@ -91,7 +91,7 @@
   },
   {
     "": 10,
-    "Name (URL)": "Databricks",
+    "Name": "Databricks",
     "Position": "SDE",
     "Location": "San Francisco, CA",
     "Class Year": "2020, 2021 graduate working on a BS/MS or PhD degree",
@@ -101,7 +101,7 @@
   },
   {
     "": 11,
-    "Name (URL)": "Dropbox",
+    "Name": "Dropbox",
     "Position": "SDE",
     "Location": "San Francisco, CA; Seattle, WA; NY, NY",
     "Class Year": "Junior, New Grad",
@@ -111,7 +111,7 @@
   },
   {
     "": 12,
-    "Name (URL)": "Duolingo",
+    "Name": "Duolingo",
     "Position": "SDE",
     "Location": "Pittsburgh, PA",
     "Class Year": "Junior, Senior",
@@ -121,7 +121,7 @@
   },
   {
     "": 13,
-    "Name (URL)": "Facebook",
+    "Name": "Facebook",
     "Position": "FE, SDE, AI, etc.",
     "Location": "Cork, Ireland; London, United Kingdom; NY, NY; Boston, MA; Sao Paulo, Brazil; Seattle, WA; Menlo Park, CA; Mexico City, Mexico",
     "Class Year": "",
@@ -131,7 +131,7 @@
   },
   {
     "": 14,
-    "Name (URL)": "Fast Enterprises",
+    "Name": "Fast Enterprises",
     "Position": "Implementation Consultant",
     "Location": "U.S.",
     "Class Year": "",
@@ -141,7 +141,7 @@
   },
   {
     "": 15,
-    "Name (URL)": "Fidelity Investments",
+    "Name": "Fidelity Investments",
     "Position": "Tech Intern",
     "Location": "Durham, NC; Merrimack, New Hampshire; Boston, MA; Smithfield, RI",
     "Class Year": "",
@@ -151,7 +151,7 @@
   },
   {
     "": 16,
-    "Name (URL)": "Flexport",
+    "Name": "Flexport",
     "Position": "SDE",
     "Location": "San Francisco, CA; Chicago, IL",
     "Class Year": "",
@@ -161,7 +161,7 @@
   },
   {
     "": 17,
-    "Name (URL)": "Front",
+    "Name": "Front",
     "Position": "SDE",
     "Location": "San Francisco, CA; Paris, France",
     "Class Year": "Junior, Senior",
@@ -171,7 +171,7 @@
   },
   {
     "": 18,
-    "Name (URL)": "Goldman Sachs",
+    "Name": "Goldman Sachs",
     "Position": "Engineering Essentials",
     "Location": "Several: Americas",
     "Class Year": "",
@@ -181,7 +181,7 @@
   },
   {
     "": 19,
-    "Name (URL)": "Google",
+    "Name": "Google",
     "Position": "Many types",
     "Location": "U.S., India",
     "Class Year": "",
@@ -191,8 +191,8 @@
   },
   {
     "": 20,
-    "Name (URL)": "Groceristar",
-    "Position": "Engineers, Q&A, Project manager, Personal Assistant, Growth Hacker. Seems to have strong mentorship and learning experience",
+    "Name": "Groceristar",
+    "Position": "Engineers, Q&A, Project manager, Growth Hacker.",
     "Location": "Remote/Work From Home",
     "Class Year": "Junior",
     "International": "",
@@ -201,7 +201,7 @@
   },
   {
     "": 21,
-    "Name (URL)": "Gusto",
+    "Name": "Gusto",
     "Position": "SDE",
     "Location": "San Francisco, CA; Denver, CO",
     "Class Year": "",
@@ -211,7 +211,7 @@
   },
   {
     "": 22,
-    "Name (URL)": "Houston Mechatronics",
+    "Name": "Houston Mechatronics",
     "Position": "Engineer (software, electrical, mechanical)",
     "Location": "Webster, TX",
     "Class Year": "",
@@ -221,7 +221,7 @@
   },
   {
     "": 23,
-    "Name (URL)": "IBM",
+    "Name": "IBM",
     "Position": "Many types",
     "Location": "U.S.",
     "Class Year": "",
@@ -231,7 +231,7 @@
   },
   {
     "": 24,
-    "Name (URL)": "IMC Trading",
+    "Name": "IMC Trading",
     "Position": "Quant Trader",
     "Location": "Chicago, IL",
     "Class Year": "",
@@ -241,7 +241,7 @@
   },
   {
     "": 25,
-    "Name (URL)": "JP Morgan Chase",
+    "Name": "JP Morgan Chase",
     "Position": "Many types",
     "Location": "Asia: Singapore; Hong Kong; Europe: Bournemouth, United Kingdom; Dublin, Ireland; Geneva, Switzerland; Glasgow, United Kingdom; London, United Kingdom; Middle East, US: Chicago, IL; Columbus, OH; Houston, TX; NY Metro; Newark/Wilmington, DE; Plano, TX; San Francisco, CA; Seattle, WA; Tampa, FL",
     "Class Year": "Junior, Senior",
@@ -251,7 +251,7 @@
   },
   {
     "": 26,
-    "Name (URL)": "Jane Street",
+    "Name": "Jane Street",
     "Position": "Trading Intern; Engineering Intern; Research Intern",
     "Location": "New York, NY; London; Hong Kongï¿½",
     "Class Year": "",
@@ -261,7 +261,7 @@
   },
   {
     "": 27,
-    "Name (URL)": "Knowt",
+    "Name": "Knowt",
     "Position": "SDE,FE,BE, Business, Marketing",
     "Location": "Remote/Work From Home",
     "Class Year": "",
@@ -271,7 +271,7 @@
   },
   {
     "": 28,
-    "Name (URL)": "Leidos",
+    "Name": "Leidos",
     "Position": "Software",
     "Location": "Reston, VA",
     "Class Year": "",
@@ -281,7 +281,7 @@
   },
   {
     "": 29,
-    "Name (URL)": "Los Alamos National Lab",
+    "Name": "Los Alamos National Lab",
     "Position": "Computional Sciences",
     "Location": "Los Alamos, New Mexico",
     "Class Year": "",
@@ -291,7 +291,7 @@
   },
   {
     "": 30,
-    "Name (URL)": "Matco Tools",
+    "Name": "Matco Tools",
     "Position": "Web Dev",
     "Location": "Stow, OH",
     "Class Year": "Junior, Senior",
@@ -301,7 +301,7 @@
   },
   {
     "": 31,
-    "Name (URL)": "Matician",
+    "Name": "Matician",
     "Position": "SDE; AI; ML",
     "Location": "Palo Alto, CA",
     "Class Year": "",
@@ -311,7 +311,7 @@
   },
   {
     "": 32,
-    "Name (URL)": "Microsoft",
+    "Name": "Microsoft",
     "Position": "",
     "Location": "Global",
     "Class Year": "",
@@ -321,7 +321,7 @@
   },
   {
     "": 33,
-    "Name (URL)": "Morgan Stanley",
+    "Name": "Morgan Stanley",
     "Position": "Tech Intern",
     "Location": "Global (excluding U.S.)",
     "Class Year": "",
@@ -331,7 +331,7 @@
   },
   {
     "": 34,
-    "Name (URL)": "Mozilla",
+    "Name": "Mozilla",
     "Position": "Many types",
     "Location": "U.S., Canada, Germany",
     "Class Year": "",
@@ -341,7 +341,7 @@
   },
   {
     "": 35,
-    "Name (URL)": "NBCUniversal",
+    "Name": "NBCUniversal",
     "Position": "Tech Intern",
     "Location": "Tokyo, Japan; Stamford, CT",
     "Class Year": "Sophomore, Junior, Senior",
@@ -351,7 +351,7 @@
   },
   {
     "": 36,
-    "Name (URL)": "Optiver",
+    "Name": "Optiver",
     "Position": "SDE",
     "Location": "Chicago, IL",
     "Class Year": "",
@@ -361,7 +361,7 @@
   },
   {
     "": 37,
-    "Name (URL)": "PayPal",
+    "Name": "PayPal",
     "Position": "SDE",
     "Location": "Austin, TX; Timonium, MD; San Francisco, CA; San Jose, CA; Scottsdale, AZ; Conshohocken, PA; New York, NY",
     "Class Year": "",
@@ -371,8 +371,8 @@
   },
   {
     "": 38,
-    "Name (URL)": "Phone2Action",
-    "Position": "Product, Engineering, Sales, Marketing, Customer Success, and Operations",
+    "Name": "Phone2Action",
+    "Position": "Product, Engineering, Operations",
     "Location": "Arlington, VA",
     "Class Year": "All levels, education, ages, and experience accepted - including high school.",
     "International": "No sponsorship",
@@ -381,7 +381,7 @@
   },
   {
     "": 39,
-    "Name (URL)": "Plantir",
+    "Name": "Plantir",
     "Position": "SDE",
     "Location": "New York, NY",
     "Class Year": "",
@@ -391,7 +391,7 @@
   },
   {
     "": 40,
-    "Name (URL)": "Qualcomm",
+    "Name": "Qualcomm",
     "Position": "SDE",
     "Location": "San Diego, CA; Boulder, Coloado; Austin, TX; San Jose, CA; Santa Clara, CA",
     "Class Year": "",
@@ -401,7 +401,7 @@
   },
   {
     "": 41,
-    "Name (URL)": "Red Ventures",
+    "Name": "Red Ventures",
     "Position": "SDE",
     "Location": "Austin, TX",
     "Class Year": "Junior",
@@ -411,7 +411,7 @@
   },
   {
     "": 42,
-    "Name (URL)": "Reddit",
+    "Name": "Reddit",
     "Position": "",
     "Location": "San Francisco, CA",
     "Class Year": "",
@@ -421,7 +421,7 @@
   },
   {
     "": 43,
-    "Name (URL)": "Rimeto",
+    "Name": "Rimeto",
     "Position": "SDE",
     "Location": "San Francisco, CA",
     "Class Year": "",
@@ -431,8 +431,8 @@
   },
   {
     "": 44,
-    "Name (URL)": "Robinhood",
-    "Position": "SDE, Web Engineer, iOS Engineer, Infrastructure Engineer",
+    "Name": "Robinhood",
+    "Position": "Web Engineer, iOS Engineer, Infrastructure Engineer",
     "Location": "Menlo Park, CA",
     "Class Year": "",
     "International": "",
@@ -441,7 +441,7 @@
   },
   {
     "": 45,
-    "Name (URL)": "Rockset",
+    "Name": "Rockset",
     "Position": "SDE",
     "Location": "San Mateo, CA",
     "Class Year": "",
@@ -451,7 +451,7 @@
   },
   {
     "": 46,
-    "Name (URL)": "SAS",
+    "Name": "SAS",
     "Position": "Tech Intern - Autism Spectrum",
     "Location": "Santa Clara Valley (Cupertino), CA (Mainly)",
     "Class Year": "",
@@ -461,7 +461,7 @@
   },
   {
     "": 47,
-    "Name (URL)": "Salesforce",
+    "Name": "Salesforce",
     "Position": "SDE",
     "Location": "Many types",
     "Class Year": "Sophomore, Junior, Senior",
@@ -471,7 +471,7 @@
   },
   {
     "": 48,
-    "Name (URL)": "Snapchat",
+    "Name": "Snapchat",
     "Position": "IT Internal FE Dev",
     "Location": "Los Angeles, CA",
     "Class Year": "",
@@ -481,7 +481,7 @@
   },
   {
     "": 49,
-    "Name (URL)": "Stripe",
+    "Name": "Stripe",
     "Position": "SDE",
     "Location": "San Francisco, CA; Seattle, WA",
     "Class Year": "Plan to graduate in 2021 or 2022",
@@ -491,7 +491,7 @@
   },
   {
     "": 50,
-    "Name (URL)": "The Vanguard Group",
+    "Name": "The Vanguard Group",
     "Position": "SDE, Technology Operations",
     "Location": "Malvern, PA; Charlotte, NC",
     "Class Year": "",
@@ -501,7 +501,7 @@
   },
   {
     "": 51,
-    "Name (URL)": "Thumbtack",
+    "Name": "Thumbtack",
     "Position": "SDE",
     "Location": "San Francisco, CA",
     "Class Year": "Graduating in 2021",
@@ -511,7 +511,7 @@
   },
   {
     "": 52,
-    "Name (URL)": "Toast",
+    "Name": "Toast",
     "Position": "SDE",
     "Location": "Dublin, Ireland",
     "Class Year": "",
@@ -521,7 +521,7 @@
   },
   {
     "": 53,
-    "Name (URL)": "Twitter",
+    "Name": "Twitter",
     "Position": "",
     "Location": "San Francisco, CA",
     "Class Year": "",
@@ -531,7 +531,7 @@
   },
   {
     "": 54,
-    "Name (URL)": "Two Sigma",
+    "Name": "Two Sigma",
     "Position": "SDE",
     "Location": "NY, NY",
     "Class Year": "",
@@ -541,7 +541,7 @@
   },
   {
     "": 55,
-    "Name (URL)": "Vail",
+    "Name": "Vail",
     "Position": "SDE, DevOps",
     "Location": "Chicago, IL",
     "Class Year": "",
@@ -551,7 +551,7 @@
   },
   {
     "": 56,
-    "Name (URL)": "Virtu Financial",
+    "Name": "Virtu Financial",
     "Position": "Trading Systems Dev",
     "Location": "NY, NY",
     "Class Year": "",
@@ -561,7 +561,7 @@
   },
   {
     "": 57,
-    "Name (URL)": "Vyte",
+    "Name": "Vyte",
     "Position": "FE, BE",
     "Location": "Paris, France",
     "Class Year": "",
@@ -571,7 +571,7 @@
   },
   {
     "": 58,
-    "Name (URL)": "Workday",
+    "Name": "Workday",
     "Position": "Software Application Engineer",
     "Location": "Canada, British Columbia, Vancouver",
     "Class Year": "",
@@ -581,7 +581,7 @@
   },
   {
     "": 59,
-    "Name (URL)": "Yelp",
+    "Name": "Yelp",
     "Position": "SDE",
     "Location": "San Francisco, CA",
     "Class Year": "",
