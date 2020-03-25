@@ -11,7 +11,7 @@ function Home(props){
                 <HomePage subTitle={props.subTitle} text={props.text} />
                 <img alt="vector" className='photo mr-1' src={vector} />
             </div>
-            <div>
+            <div className='hero'>
                 <Hero />
             </div>
             {/* <div className="mt-2 tablect">

@@ -8,9 +8,9 @@ function SignHero(props){
     return(
         <Jumbotron className="bg-transparent jumbotron-fluid p-0">
             <Container fluid={true}>
-                <Row className="justify-content-center text-left ml-5 cp">
-                    <Col className="text-left companies">
-                        <h4 className="justify-content-center bolder ml-5">Companies Hiring</h4>
+                <Row className="justify-content-center">
+                    <Col className="text-left her" md={11} sm={12}>
+                        <h4 className="display-5 font-weight-bolder">Companies Hiring</h4>
                     </Col>
                 </Row>
             </Container>

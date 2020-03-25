@@ -207,6 +207,14 @@ code {
         width: 500px;
         display: block;
     }
+    .her{
+      margin-left: 200px;
+    }
+}
+@media (max-width: 750px){
+  .her{
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 950px) 
