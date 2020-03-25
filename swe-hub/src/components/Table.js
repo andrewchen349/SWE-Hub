@@ -6,12 +6,13 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 
 const StyledTableCell = withStyles(theme => ({
   head: {
     backgroundColor: theme.palette.common.grey,
     color: theme.palette.common.back,
+    fontWeight: 700,
+    fontSize: 16,
   },
   body: {
     fontSize: 14,
@@ -40,13 +41,13 @@ const rows = [
 
 export default function CustomizedTables() {
   return (
-    <TableContainer component={Paper}>
-      <Table  aria-label="customized table">
+    <TableContainer>
+      <Table>
         <TableHead>
           <TableRow>
-            <StyledTableCell>Dessert (100g serving)</StyledTableCell>
-            <StyledTableCell align="right">Calories</StyledTableCell>
-            <StyledTableCell align="right">Fat&nbsp;(g)</StyledTableCell>
+            <StyledTableCell>Company</StyledTableCell>
+            <StyledTableCell align="left">Location</StyledTableCell>
+            <StyledTableCell align="left">Postion</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -55,12 +56,13 @@ export default function CustomizedTables() {
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
+              <StyledTableCell align="left">{row.calories}</StyledTableCell>
+              <StyledTableCell align="left">{row.fat}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
       </Table>
     </TableContainer>
+    
   );
 }
