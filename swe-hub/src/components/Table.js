@@ -6,6 +6,19 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import Jobs from '../assets/jobs.json';
+
+
+
+// function createJobs(arr) {
+//   const result = [];
+//   arr.map(({Name, Position}) => {
+//     result.push({Name, Position});
+//   })
+//   return result;
+// }
+
+
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -38,6 +51,8 @@ const rows = [
   createData('Cupcake', 305, 3.7),
   createData('Gingerbread', 356, 16.0),
 ];
+// const res = createJobs({Jobs});
+
 
 export default function CustomizedTables() {
   return (
@@ -47,9 +62,20 @@ export default function CustomizedTables() {
           <TableRow>
             <StyledTableCell>Company</StyledTableCell>
             <StyledTableCell align="left">Location</StyledTableCell>
-            <StyledTableCell align="left">Postion</StyledTableCell>
+            <StyledTableCell align="left">Year</StyledTableCell>
+            <StyledTableCell align="left">Position </StyledTableCell>
           </TableRow>
         </TableHead>
+        <TableBody>
+          {Jobs.map(row => (
+            <StyledTableRow key={row.Name}>
+              <StyledTableCell component="th" scope="row">
+                {row.Name}
+              </StyledTableCell>
+              <StyledTableCell align="left">{row.Position}</StyledTableCell>
+            </StyledTableRow>
+          ))}
+        </TableBody>
         <TableBody>
           {rows.map(row => (
             <StyledTableRow key={row.name}>

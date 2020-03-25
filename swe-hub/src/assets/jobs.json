@@ -1,7 +1,7 @@
 [
   {
     "": 1,
-    "Name (URL)": "Akuna",
+    "Name": "Akuna",
     "Position": "Many types",
     "Location": "Chicago, IL; Sydney, Australia; Shanghai; Boston, MA",
     "Class Year": "Junior, Senior",
@@ -11,7 +11,7 @@
   },
   {
     "": 2,
-    "Name (URL)": "Amazon",
+    "Name": "Amazon",
     "Position": "SDE",
     "Location": "Seattle, WA; Austin, TX; Bellevue, WA; Boston, MA; Denver, CO; Detriot, MI; Herndon, VA; Irvine, CA; NY, NY; Madison, WI; Minneapolis, MN; Phoenix, AZ;Portland, OR; San Diego, CA; Vancouver, Canada; Toronto, Canada; Winnipeg Canada",
     "Class Year": "",
@@ -21,7 +21,7 @@
   },
   {
     "": 3,
-    "Name (URL)": "American Express",
+    "Name": "American Express",
     "Position": "SDE",
     "Location": "Phoenix, AZ; Ft. Lauderdale, FL; NY, NY",
     "Class Year": "Sophomores, Junior, Senior",
@@ -31,7 +31,7 @@
   },
   {
     "": 4,
-    "Name (URL)": "Apple",
+    "Name": "Apple",
     "Position": "SDE, Hardware, UI/UX, Sales, ML",
     "Location": "Santa Clara Valley (Cupertino), CA (Mainly)",
     "Class Year": "",
