@@ -55,9 +55,11 @@ export default function CustomizedTables() {
         <TableBody>
           {Jobs.map(row => (
             <StyledTableRow key={row.Name}>
-              <a href={row.URL} target="_blank"><StyledTableCell component="th" scope="row">
-                {row.Name}
-              </StyledTableCell></a>
+              <a href={row.URL} target="_blank">
+                <StyledTableCell component="th" scope="row">
+                  {row.Name}
+                </StyledTableCell>
+              </a>
               <StyledTableCell align="left">{row.Position}</StyledTableCell>
               <StyledTableCell align="left">{row.Location}</StyledTableCell>
               <StyledTableCell align="left">{row.Class}</StyledTableCell>

@@ -2,6 +2,7 @@ import React from 'react';
 import HomePage from '../components/HomeHero';
 import Table from '../components/Table';
 import Hero from '../components/SignHero';
+import Footer from '../components/Footer';
 import vector from '../assets/mainSmall.png';
 
 function Home(props){
@@ -16,6 +17,9 @@ function Home(props){
             </div>
             <div className="mt-2 tablect" >
                 <Table />
+            </div>
+            <div className="text-center">
+                <Footer />
             </div>
         </div>
     );
