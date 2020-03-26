@@ -12,8 +12,6 @@ function ForgotPassword(props){
                 <img alt="vector" className='photoSign' src={vector} />
             </div>
         </div>
-
     );
 }
-
 export default ForgotPassword;

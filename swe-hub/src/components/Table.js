@@ -8,18 +8,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Jobs from '../assets/jobs.json';
 
-
-
-// function createJobs(arr) {
-//   const result = [];
-//   arr.map(({Name, Position}) => {
-//     result.push({Name, Position});
-//   })
-//   return result;
-// }
-
-
-
 const StyledTableCell = withStyles(theme => ({
   head: {
     backgroundColor: theme.palette.common.grey,
@@ -68,6 +56,5 @@ export default function CustomizedTables() {
         </TableBody>
       </Table>
     </TableContainer>
-    
   );
 }

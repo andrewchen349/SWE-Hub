@@ -23,7 +23,5 @@ function HomeHero(props){
             </Container>
         </Jumbotron>
     );
-
 }
-
 export default HomeHero;

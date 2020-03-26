@@ -2,7 +2,6 @@ import React from 'react';
 import Form from '../components/InputForm';
 import vector from '../assets/logintwoSmall.png';
 
-
 function SignIn(props){
     return(
         <div className="box2">
@@ -23,5 +22,4 @@ function SignIn(props){
         </div>
     );
 }
-
 export default SignIn;

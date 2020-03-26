@@ -9,7 +9,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
 const CssTextField = withStyles({
   root: {
     '& .MuiOutlinedInput-root': {
@@ -23,7 +22,6 @@ const CssTextField = withStyles({
   },
 })(TextField);
 
-
 const useStyles = makeStyles(theme => ({
   margin: {
     margin: theme.spacing(1),
@@ -33,7 +31,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function CustomizedInputs() {
   const classes = useStyles();
-
   return (
     <Jumbotron className="bg-transparent jumbotron-fluid p-0 ctFor">
         <Container fluid={true}>
