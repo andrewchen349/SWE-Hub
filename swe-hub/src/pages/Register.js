@@ -9,7 +9,7 @@ function Register(props){
                 <Form />
                 <div className="formextra ml-2">
                     <div>
-                        <a className='link' onClick={event => window.open('/register', '_blank')}><p>Register </p></a>
+                        <a className='link' onClick={event => window.open('/account', '_blank')}><p>Login</p></a>
                     </div>
                     <div className="ml-3">
                         <a className='link' target="_blank" onClick={event => window.open('/forgot', '_blank')}>Forgot Password?</a>
