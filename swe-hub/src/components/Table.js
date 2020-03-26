@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Jobs from '../assets/jobs.json';
+import Jobs2 from '../assets/morejob.json';
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -35,22 +36,22 @@ export default function CustomizedTables() {
         <TableHead>
           <TableRow>
             <StyledTableCell>Company</StyledTableCell>
-            <StyledTableCell align="left">Position</StyledTableCell>
             <StyledTableCell align="left">Location</StyledTableCell>
-            <StyledTableCell align="left">Year</StyledTableCell>
+            <StyledTableCell align="left">Application Period</StyledTableCell>
+            <StyledTableCell align="left">Note</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {Jobs.map(row => (
+          {Jobs2.map(row => (
             <StyledTableRow key={row.Name}>
-              <a href={row.URL} target="_blank">
+              <a href={row.Link} target="_blank">
                 <StyledTableCell component="th" scope="row">
                   {row.Name}
                 </StyledTableCell>
               </a>
-              <StyledTableCell align="left">{row.Position}</StyledTableCell>
               <StyledTableCell align="left">{row.Location}</StyledTableCell>
-              <StyledTableCell align="left">{row.Class}</StyledTableCell>
+              <StyledTableCell align="left">{row.Period}</StyledTableCell>
+              <StyledTableCell align="left">{row.Notes}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
