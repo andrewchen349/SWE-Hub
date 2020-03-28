@@ -9,6 +9,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { Link, withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { registerUser } from "../actions/authActions";
+import classnames from "classnames";
+
 const CssTextField = withStyles({
   root: {
     '& .MuiOutlinedInput-root': {
@@ -23,12 +29,14 @@ const CssTextField = withStyles({
 })(TextField);
 
 const st = {
-  with: 270
+  marginTop: 10,
+  width: 270
+  
 }
 
 class InputFormRegister extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: "",
       email: "",
@@ -37,12 +45,22 @@ class InputFormRegister extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
+  }
+  
   onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
   onSubmit = e => {
       e.preventDefault();
   };
+  
+  
 
   render(){
     const newUser = {
@@ -50,7 +68,8 @@ class InputFormRegister extends React.Component {
       email: this.state.email,
       password: this.state.password,
     };
-
+    this.props.registerUser(newUser, this.props.history); 
+  
     const { errors } = this.state;
     
     return (
@@ -59,11 +78,14 @@ class InputFormRegister extends React.Component {
               <Row className="justify-content-center">
                   <Col className="text-left-center ml-3" md={9} sm={12}>
                       <h3 className="justify-content-center subheading signWel ml-3">Welcome!</h3>
-                      <form noValidate>
+                      <form onSubmit={this.onSubmit} noValidate>
                           <div>
                               <CssTextField
-                                  className="mt-2"
+                                  className={classnames("", {
+                                    invalid: errors.email
+                                  })}
                                   style={st}
+                                  onChange={this.onChange}
                                   label="Email"
                                   variant="outlined"
                                   id="custom-css-outlined-input"
@@ -71,8 +93,11 @@ class InputFormRegister extends React.Component {
                           </div>
                           <div>
                               <CssTextField
-                                  className="mt-2"
+                                  className={classnames("", {
+                                    invalid: errors.name
+                                  })}
                                   style={st}
+                                  onChange={this.onChange}
                                   label="Username"
                                   variant="outlined"
                                   id="custom-css-outlined-input"
@@ -80,15 +105,19 @@ class InputFormRegister extends React.Component {
                           </div>
                           <div>
                               <CssTextField
-                                  className="mt-2"
+                                  className={classnames("", {
+                                    invalid: errors.password
+                                  })}
                                   style={st}
                                   label="Password"
+                                  onChange={this.onChange}
                                   variant="outlined"
                                   id="custom-css-outlined-input"
                               />
                           </div>
+                          <button type="submit" className="login"> Sign Up</button>
                       </form> 
-                      <button className="login"> Sign Up</button>
+                      {/* <button className="login"> Sign Up</button> */}
                   </Col>
               </Row>
           </Container>
@@ -96,4 +125,16 @@ class InputFormRegister extends React.Component {
     );
   }
 }
-export default InputFormRegister;
+InputFormRegister.propTypes = {
+  registerUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+export default connect(
+  mapStateToProps,
+  { registerUser }
+)(withRouter(InputFormRegister));

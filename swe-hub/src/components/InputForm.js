@@ -9,6 +9,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { Link, withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { loginUser } from "../actions/authActions";
+import classnames from "classnames";
+
 const CssTextField = withStyles({
   root: {
     '& .MuiOutlinedInput-root': {
@@ -30,6 +36,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const st = {
+    marginTop: 10,
     width: 270
 }
 
@@ -44,6 +51,17 @@ class InputForm extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push("/dashboard"); // push user to dashboard when they login
+    }
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
+  }
+
   onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
@@ -56,7 +74,12 @@ class InputForm extends React.Component {
       email: this.state.email,
       password: this.state.password,
     };
-
+    const userData = {
+      email: this.state.email,
+      password: this.state.password
+    };
+    
+    this.props.loginUser(userData);
     const { errors } = this.state;
     return (
       <Jumbotron className="bg-transparent jumbotron-fluid p-0 ct">
@@ -64,27 +87,36 @@ class InputForm extends React.Component {
               <Row className="justify-content-center">
                   <Col className="text-left-center ml-3" md={9} sm={12}>
                       <h3 className="justify-content-center subheading sign">SignIn</h3>
-                      <form noValidate>
+                      <form onSubmit={this.onSubmit} noValidate>
                           <div className="csstext">
                               <CssTextField
-                                  className="mt-2"
+                                  className={classnames("", {
+                                    invalid: errors.email || errors.emailnotfound
+                                  })}
                                   style={st}
-                                  label="Username"
+                                  onChange={this.onChange}
+                                  // value={this.state.email}
+                                  label="Email"
                                   variant="outlined"
                                   id="custom-css-outlined-input"
                               />
                           </div>
                           <div>
                               <CssTextField
-                                  className="mt-2"
+                                   className={classnames("", {
+                                    invalid: errors.password || errors.passwordincorrect
+                                  })}
                                   style={st}
                                   label="Password"
+                                  onChange={this.onChange}
+                                  // value={this.state.password}
                                   variant="outlined"
                                   id="custom-css-outlined-input"
                               />
                           </div>
+                          <button type="submit" className="login"> Login</button>
                       </form> 
-                      <button className="login"> Login</button>
+                      {/* <button type="submit" className="login"> Login</button> */}
                   </Col>
               </Row>
           </Container>
@@ -92,4 +124,17 @@ class InputForm extends React.Component {
     );
   }
 }
-export default InputForm;
+InputForm.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+export default connect(
+  mapStateToProps,
+  { loginUser }
+)(InputForm);
+

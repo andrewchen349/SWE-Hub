@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import Signin from './pages/SignIn';
 import Forgot from './pages/ForgotPassword';
+import Store from  './Store';
 
 //Other Imports
 import {
@@ -21,6 +22,11 @@ import {
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/NavBar';
 import Nav from 'react-bootstrap/Nav';
+
+import { Provider } from "react-redux";
+import jwt_decode from "jwt-decode";
+import setAuthToken from "./utils/setAuthToken";
+import { setCurrentUser, logoutUser } from "./actions/authActions";
 
 class App extends React.Component{
   constructor(props){
@@ -49,6 +55,7 @@ class App extends React.Component{
 
   render(){
     return(
+      <Provider store={Store}>
         <Router>
             <Container fluid={true}>
                 <Navbar bg="transparent" expand="lg">
@@ -67,6 +74,7 @@ class App extends React.Component{
                 <Route path="/forgot" exact render={() => <Forgot />} />
             </Container>
         </Router>
+      </Provider>
     );
   }
 }
