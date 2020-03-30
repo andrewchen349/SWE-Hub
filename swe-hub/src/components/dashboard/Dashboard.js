@@ -33,10 +33,13 @@ class Dashboard extends Component {
             </Container>
         </Jumbotron>
         <div className="ml-4 row">
-          <div className="column1 tb shadow p-3 mb-5 bg-white rounded"> 
+          <div className="column1 tb shadow p-3 mb-5 bg-white rounded">
+          <div className="mb-4 ml-3">
+            <h5 className="display-6 dc"><b>Still Need To Apply To These Companies:</b></h5>
+          </div> 
             <Table />
           </div>
-          <div className="column"> 
+          <div className="column debug"> 
             <p>Column2</p>
           </div>
         </div>

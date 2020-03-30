@@ -42,7 +42,7 @@ export default function CustomizedTables() {
         <TableBody>
           {Jobs.map(row => (
             <StyledTableRow key={row.Name}>
-              <a href={row.URL} target="_blank" rel="noopener noreferrer">
+              <a href={row.Link} target="_blank" rel="noopener noreferrer">
                 <StyledTableCell align="center" component="th" scope="row">
                   {row.Name}
                 </StyledTableCell>

@@ -114,6 +114,9 @@ code {
   background-color: #E4E7EC;
   border-radius: 25px;
 }
+.dc{
+  color: #4FBAEC;
+}
 
 /* Clear floats after the columns */
 .row:after {
