@@ -2,42 +2,55 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+
+//Bootstrap
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import Footer from '../Footer';
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
   };
-render() {
+
+  render() {
     const { user } = this.props.auth;
-return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="col s12 center-align">
-            <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
-            </h4>
+
+    return (
+      
+      <div >
+        <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+            <Container fluid={true}>
+                <Row className="justify-content-center mt-4 ml-2">
+                    <Col className="text-left">
+                        <h4 className="display-5 font-weight-lighter"><b>Welcome back ,</b> {user.name.split(" ")[0]}<b>👋</b></h4>
+                    </Col>
+                </Row>
+            </Container>
+        </Jumbotron>
+        <div className="debug ml-4 row">
+          <div className="column"> 
+            <p>Column1</p>
+          </div>
+          <div className="column"> <p>Column2</p></div>
+        </div>
+        <div className="bottom text-center">
             <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="success"
             >
               Logout
             </button>
-          </div>
+            <Footer/>
         </div>
       </div>
     );
   }
 }
+
 Dashboard.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired

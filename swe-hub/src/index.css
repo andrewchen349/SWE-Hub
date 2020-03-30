@@ -96,6 +96,37 @@ code {
   width: 200px;
   margin-top: 30px;
 }
+.bottom{
+  position: fixed; 
+    
+    width:100%;
+    bottom:0;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.loginout{
+  background-color: #4FBAEC;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  border-radius: 20px;
+  width: 150px;
+  margin-top: 30px;
+}
 .csstext{
   width: 270;
   margin-top: 20px;
