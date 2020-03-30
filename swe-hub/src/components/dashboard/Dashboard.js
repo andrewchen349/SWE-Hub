@@ -77,7 +77,7 @@ class Dashboard extends Component {
               <h6 className="display-6 text-center"><b>Want to See More Internships?</b></h6>
               <div className="text-center mt-3">
                 <button
-                onClick={this.onLogoutClick}
+                onClick={event => window.location.href='/'}
                 className="success"
               >
                 Return Home
