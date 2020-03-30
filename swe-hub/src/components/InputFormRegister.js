@@ -45,13 +45,6 @@ class InputFormRegister extends React.Component {
     };
   }
 
-  // componentDidMount() {
-  //   // If logged in and user navigates to Register page, should redirect them to dashboard
-  //   if (this.props.auth.isAuthenticated) {
-  //     this.props.history.push("/dashboard");
-  //   }
-  // }
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({
@@ -66,8 +59,6 @@ class InputFormRegister extends React.Component {
   onSubmit = e => {
       e.preventDefault();
   };
-  
-  
   
   render(){
     const newUser = {
@@ -96,7 +87,6 @@ class InputFormRegister extends React.Component {
                                   label="Email"
                                   value={this.state.email}
                                   variant="outlined"
-                                  // id="custom-css-outlined-input"
                                   id="email"
                               />
                           </div>
@@ -110,7 +100,6 @@ class InputFormRegister extends React.Component {
                                   value={this.state.name}
                                   label="Username"
                                   variant="outlined"
-                                  // id="custom-css-outlined-input"
                                   id="name"
                               />
                           </div>
@@ -124,13 +113,11 @@ class InputFormRegister extends React.Component {
                                   value={this.state.password}
                                   onChange={this.onChange}
                                   variant="outlined"
-                                  // id="custom-css-outlined-input"
                                   id="password"
                               />
                           </div>
                           <button type="submit" className="login"> Sign Up</button>
                       </form> 
-                      {/* <button className="login"> Sign Up</button> */}
                   </Col>
               </Row>
           </Container>

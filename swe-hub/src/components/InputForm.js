@@ -51,12 +51,12 @@ class InputForm extends React.Component {
     };
   }
 
-  // componentDidMount() {
-  //   // If logged in and user navigates to Login page, should redirect them to dashboard
-  //   if (this.props.auth.isAuthenticated) {
-  //     this.props.history.push("/dashboard");
-  //   }
-  // }
+  componentDidMount() {
+    // If logged in and user navigates to Login page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      window.location.href = '/dashboard';
+    }
+  }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
@@ -106,7 +106,6 @@ class InputForm extends React.Component {
                                   label="Email"
                                   variant="outlined"
                                   id="email"
-                                  // id="custom-css-outlined-input"
                               />
                           </div>
                           <div>
@@ -120,12 +119,10 @@ class InputForm extends React.Component {
                                   value={this.state.password}
                                   variant="outlined"
                                   id="password"
-                                  // id="custom-css-outlined-input"
                               />
                           </div>
                           <button type="submit" className="login"> Login</button>
                       </form> 
-                      {/* <button type="submit" className="login"> Login</button> */}
                   </Col>
               </Row>
           </Container>
