@@ -8,6 +8,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Table from '../DashTable';
 
 import Footer from '../Footer';
 class Dashboard extends Component {
@@ -31,11 +32,13 @@ class Dashboard extends Component {
                 </Row>
             </Container>
         </Jumbotron>
-        <div className="debug ml-4 row">
-          <div className="column"> 
-            <p>Column1</p>
+        <div className="ml-4 row">
+          <div className="column1 tb shadow p-3 mb-5 bg-white rounded"> 
+            <Table />
           </div>
-          <div className="column"> <p>Column2</p></div>
+          <div className="column"> 
+            <p>Column2</p>
+          </div>
         </div>
         <div className="bottom text-center">
             <button
@@ -44,8 +47,8 @@ class Dashboard extends Component {
             >
               Logout
             </button>
-            <Footer/>
         </div>
+        <Footer/>
       </div>
     );
   }

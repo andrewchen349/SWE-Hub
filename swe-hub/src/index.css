@@ -97,14 +97,22 @@ code {
   margin-top: 30px;
 }
 .bottom{
-  position: fixed; 
-    
+    margin-top: 40px;
     width:100%;
     bottom:0;
 }
 .column {
+  margin-left: 50px;
   float: left;
   width: 50%;
+}
+.column1{
+  float: left;
+  width: 40%;
+}
+.tb{
+  background-color: #E4E7EC;
+  border-radius: 25px;
 }
 
 /* Clear floats after the columns */
