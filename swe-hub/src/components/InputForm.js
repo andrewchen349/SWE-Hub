@@ -119,6 +119,7 @@ class InputForm extends React.Component {
                                   value={this.state.password}
                                   variant="outlined"
                                   id="password"
+                                  type="password"
                               />
                           </div>
                           <button type="submit" className="login"> Login</button>

@@ -109,6 +109,7 @@ class InputFormRegister extends React.Component {
                                     invalid: errors.password
                                   })}
                                   style={st}
+                                  type="password"
                                   label="Password"
                                   value={this.state.password}
                                   onChange={this.onChange}
