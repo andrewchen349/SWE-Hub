@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 //Import Bootstrap Framework
@@ -85,7 +84,7 @@ class App extends React.Component{
                         <Nav className="ml-auto">
                             <h5> <Link className="nav-link display-5 font-weight-semibold subheading" to="/">Home</Link></h5>
                             <h5> <Link className="nav-link display-5 font-weight-semibold subheading" to="/account">Account</Link></h5>
-                            <h5> <a className="nav-link display-5 font-weight-semibold heading" href='https://www.buymeacoffee.com/swehub' target='_blank'><span style={{color:'#749AC5'}}>Donation</span></a></h5>
+                            <h5> <a className="nav-link display-5 font-weight-semibold heading" href='https://www.buymeacoffee.com/swehub' rel="noopener noreferrer" target='_blank'><span style={{color:'#749AC5'}}>Donation</span></a></h5>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

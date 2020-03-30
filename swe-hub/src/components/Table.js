@@ -44,7 +44,7 @@ export default function CustomizedTables() {
         <TableBody>
           {Jobs2.map(row => (
             <StyledTableRow key={row.Name}>
-              <a href={row.Link} target="_blank">
+              <a href={row.Link} target="_blank" rel="noopener noreferrer">
                 <StyledTableCell component="th" scope="row">
                   {row.Name}
                 </StyledTableCell>
