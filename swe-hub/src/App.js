@@ -93,6 +93,7 @@ class App extends React.Component{
                 <Route path="/account" exact render={() => <Signin />} />
                 <Route path="/register" exact render={() => <Register />} />
                 <Route path="/forgot" exact render={() => <Forgot />} />
+                {/* <Route path="/dashboard" exact render={() => <Dashboard />} /> */}
                 <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>

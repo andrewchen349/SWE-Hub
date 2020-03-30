@@ -45,12 +45,12 @@ class InputFormRegister extends React.Component {
     };
   }
 
-  componentDidMount() {
-    // If logged in and user navigates to Register page, should redirect them to dashboard
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
-    }
-  }
+  // componentDidMount() {
+  //   // If logged in and user navigates to Register page, should redirect them to dashboard
+  //   if (this.props.auth.isAuthenticated) {
+  //     this.props.history.push("/dashboard");
+  //   }
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
@@ -66,7 +66,7 @@ class InputFormRegister extends React.Component {
   onSubmit = e => {
       e.preventDefault();
   };
-
+  
   
   
   render(){

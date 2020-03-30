@@ -51,16 +51,16 @@ class InputForm extends React.Component {
     };
   }
 
-  componentDidMount() {
-    // If logged in and user navigates to Login page, should redirect them to dashboard
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
-    }
-  }
+  // componentDidMount() {
+  //   // If logged in and user navigates to Login page, should redirect them to dashboard
+  //   if (this.props.auth.isAuthenticated) {
+  //     this.props.history.push("/dashboard");
+  //   }
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/dashboard"); // push user to dashboard when they login
+      window.location.href = '/dashboard';
     }
     if (nextProps.errors) {
       this.setState({
@@ -102,10 +102,11 @@ class InputForm extends React.Component {
                                   })}
                                   style={st}
                                   onChange={this.onChange}
-                                  // value={this.state.email}
+                                  value={this.state.email}
                                   label="Email"
                                   variant="outlined"
-                                  id="custom-css-outlined-input"
+                                  id="email"
+                                  // id="custom-css-outlined-input"
                               />
                           </div>
                           <div>
@@ -116,9 +117,10 @@ class InputForm extends React.Component {
                                   style={st}
                                   label="Password"
                                   onChange={this.onChange}
-                                  // value={this.state.password}
+                                  value={this.state.password}
                                   variant="outlined"
-                                  id="custom-css-outlined-input"
+                                  id="password"
+                                  // id="custom-css-outlined-input"
                               />
                           </div>
                           <button type="submit" className="login"> Login</button>
