@@ -105,6 +105,7 @@ code {
   margin-left: 50px;
   float: left;
   width: 50%;
+  height: max-content;
 }
 .column1{
   float: left;
