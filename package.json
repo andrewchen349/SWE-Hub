@@ -1,0 +1,35 @@
+{
+  "name": "swe-hub",
+  "version": "1.0.0",
+  "description": "The easiest way for software engineers to find internships and jobs",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix swe-hub",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewchen349/SWE-Hub.git"
+  },
+  "author": "Andrew Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewchen349/SWE-Hub/issues"
+  },
+  "homepage": "https://github.com/andrewchen349/SWE-Hub#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.0.0"
+  }
+}
