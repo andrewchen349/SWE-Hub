@@ -9,6 +9,7 @@ const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
 
+
 // @route POST api/users/register
 // @desc Register user
 // @access Public
@@ -26,7 +27,7 @@ router.post("/register", (req, res) => {
         const newUser = new User({
           name: req.body.name,
           email: req.body.email,
-          password: req.body.password
+          password: req.body.password,
         });
   // Hash password before saving in database
         bcrypt.genSalt(10, (err, salt) => {
@@ -43,7 +44,7 @@ router.post("/register", (req, res) => {
     });
   });
 
- // @route POST api/users/login
+// @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
 router.post("/login", (req, res) => {
@@ -93,4 +94,21 @@ router.post("/login", (req, res) => {
     });
   });
 
-  module.exports = router;
+
+// @route PUT api/users/fav
+// @desc add fav jobs
+// @access Public
+router.put("/fav", (req, res) => {
+  User.findOne({ email: req.body.email }).then(user => {
+    if (user) {
+      var myquery = { fav: user.fav };
+      var newvalues = { $set: {fav: req.body.favorite } };
+      User.updateOne(myquery, newvalues, function(err, res) {
+        if (err) throw err;
+        console.log("Fav Job Added");
+      });
+    } 
+  });
+});
+
+module.exports = router;
